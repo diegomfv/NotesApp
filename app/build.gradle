@@ -38,6 +38,13 @@ android {
     buildFeatures {
         viewBinding true
     }
+
+    //Robolectric
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
 }
 
 dependencies {
@@ -59,6 +66,7 @@ dependencies {
 
     testImplementation 'junit:junit:4.13.2'
     testImplementation "androidx.room:room-testing:$room_version"
+    testImplementation 'org.robolectric:robolectric:4.4' //robolectric
 
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
