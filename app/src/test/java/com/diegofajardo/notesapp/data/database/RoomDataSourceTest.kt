@@ -1,9 +1,8 @@
 package com.diegofajardo.notesapp.data.database
 
 import android.os.Build
-import androidx.room.Room
-import androidx.test.platform.app.InstrumentationRegistry
 import com.diegofajardo.notesapp.domain.NoteMobile
+import com.diegofajardo.notesapp.shared.getInMemoryDatabase
 import junit.framework.TestCase
 import kotlinx.coroutines.runBlocking
 import org.junit.Test
@@ -176,14 +175,5 @@ class RoomDataSourceTest : TestCase() {
             val records2 = roomDataSource.findById(0)
             assertTrue(records2.isEmpty())
         }
-    }
-
-    private fun getInMemoryDatabase(): NoteDatabase {
-        return Room.inMemoryDatabaseBuilder(
-            InstrumentationRegistry.getInstrumentation().targetContext,
-            NoteDatabase::class.java
-        )
-            .allowMainThreadQueries()
-            .build()
     }
 }
