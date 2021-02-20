@@ -21,7 +21,7 @@ import org.robolectric.annotation.Config
 class SaveNoteUsecaseTest {
 
     @Test
-    fun `invoke adds record tn database`() {
+    fun `invoke adds record to database`() {
         val dao = getInMemoryDatabase().noteDao()
         val usecase = SaveNoteUsecase(NoteRepository(RoomDataSource(dao)))
 
