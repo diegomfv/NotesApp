@@ -1,7 +1,7 @@
 # NotesApp
 
-Save your notes in an easy way.
-Forget about everything. Just focus on your notes :)
+Save your notes in an easy way.\
+Forget about everything. Just focus on your notes :)\
 No internet connection required.
 
 ------
