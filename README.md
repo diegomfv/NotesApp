@@ -10,6 +10,8 @@ For developers:
 - Clean architecture.
 - Unit Testing.
 
-//In development. Still TO DO:
+-----
+
+In development. Still TO DO:
 - Ui Layer.
 - Presentation Layer.
